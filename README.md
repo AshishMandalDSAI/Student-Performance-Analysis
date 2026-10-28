@@ -1,262 +1,246 @@
-# Student Performance Analysis System
+<div align="center">
 
-A simple, beginner-friendly Python mini-project. Upload a CSV file of student marks and the application
-calculates each student's **total, average, percentage, grade and Pass/Fail result**, shows a class summary
-and charts, lets you search and filter, and lets you download the results as a CSV file.
+# 🎓 Student Performance Analysis System
 
-This is a **traditional data-analysis project**. It uses only Python, Pandas, Matplotlib and Streamlit.
-It does **not** use AI, machine learning, external APIs, a database, or a login system.
+### Analyze Student Results. Discover Performance. Make Better Decisions.
+
+A Python-based interactive dashboard for analyzing student marks, calculating results, and visualizing academic performance.
+
+<br>
+
+<a href="https://student-performance-analysis-ggztvejeupesjzqbma7eeg.streamlit.app/">
+  <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Open_Application-FF4B4B?style=for-the-badge" alt="Live Demo">
+</a>
+
+<a href="https://github.com/AshishMandalDSAI/Student-Performance-Analysis">
+  <img src="https://img.shields.io/badge/GitHub-View_Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
+</a>
+
+<br><br>
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square\&logo=python\&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=flat-square\&logo=pandas\&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=flat-square)
+
+</div>
 
 ---
 
-## 1. Project overview
+## 🌐 Live Application
 
-Teachers often keep marks in a spreadsheet and then work out totals, grades and pass/fail by hand.
-This project automates that work. You upload the marks as a CSV file, choose which columns are subjects,
-and the app does the calculations and shows the results in a web page that opens in your browser.
+**Try the application here:**
 
-## 2. Objectives
+### 👉 [Launch Student Performance Analysis System](https://student-performance-analysis-ggztvejeupesjzqbma7eeg.streamlit.app/)
 
-- Read student marks from a CSV file and check that the data is valid.
-- Calculate total marks, average marks, percentage, grade and Pass/Fail for every student.
-- Show a simple class summary and four charts.
-- Let the user search students and filter by grade or by Pass/Fail.
-- Let the user download the calculated results.
-- Keep the code simple, well organised and tested.
+Explore the dashboard, analyze student performance, and use the available features directly in your browser.
 
-## 3. Features
+## 📌 About the Project
 
-| # | Feature | Where to find it |
-|---|---|---|
-| 1 | Home page with title, description and instructions | Top of the page |
-| 2 | CSV upload | Sidebar |
-| 3 | Dataset preview (rows, columns, column names, missing values) | "Dataset preview" section |
-| 4 | Data validation with clear error messages; choose your own subject columns | "Data validation" section, sidebar |
-| 5 | Total, average, percentage, grade, Pass/Fail for each student | "Student results" section |
-| 6 | Performance summary (students, passed, failed, class average, highest, lowest) | "Performance summary" section |
-| 7 | Four Matplotlib charts | "Charts" section |
-| 8 | Search by ID/name; filter by grade and by Pass/Fail. Results, summary and charts follow the search/filters, and a matching student's full details are shown | Sidebar, "Student results" section |
-| 9 | Download results as CSV | Bottom of the page |
-| 10 | Sample dataset of 36 fictional students | `sample_students.csv`, or the sidebar checkbox |
+The **Student Performance Analysis System** is an interactive data analysis application developed using Python and Streamlit.
 
-## 4. Technology stack
+It helps users understand student academic performance by organizing marks, calculating performance metrics, displaying results, and presenting data through visualizations.
 
-| Tool | Version used | Purpose |
-|---|---|---|
-| Python | 3.12 (tested with 3.12.3) | Programming language |
-| Pandas | 2.3.3 | Reading the CSV and doing the calculations |
-| Matplotlib | 3.10.8 | Charts |
-| Streamlit | 1.52.2 | The web interface |
-| Pytest | 8.4.2 | Automated tests |
+The project demonstrates how Python libraries can transform student records into useful information through an easy-to-use web dashboard.
 
-## 5. Project structure
+**Project Category:** Data Analytics | Python | Data Visualization
 
-```
-student-performance-analysis/
+## ✨ Key Features
+
+* 📂 **Student Data Analysis** — Analyze student records from supported datasets.
+* 🧮 **Automatic Calculations** — Calculate total marks, averages, and percentages using the application's configured logic.
+* 🏆 **Grade Analysis** — Display student grades based on the implemented grading rules.
+* ✅ **Pass/Fail Identification** — Identify student results using the application's configured criteria.
+* 🔍 **Student Search** — Find student records using supported search fields.
+* 🎯 **Interactive Filters** — Filter records using the available filtering options.
+* 📊 **Data Visualization** — Explore performance through charts and graphical summaries.
+* 👨‍🎓 **Student Details** — Review matching student information where supported.
+* 📥 **Result Export** — Download results in CSV format if the export feature is available.
+* 🧪 **Automated Testing** — Test the analysis logic with the project's test suite.
+
+*The available functionality depends on the current application implementation.*
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose                        |
+| ---------- | ------------------------------ |
+| Python     | Core application development   |
+| Pandas     | Data manipulation and analysis |
+| Matplotlib | Data visualization             |
+| Streamlit  | Interactive web application    |
+| Pytest     | Automated testing              |
+
+## 📸 Application Overview
+
+The application is designed to make student performance data easier to explore and understand.
+
+Users can open the live dashboard, inspect the available metrics and charts, and use the supported search, filter, and export features.
+
+**Live Preview:** [Open the Application](https://student-performance-analysis-ggztvejeupesjzqbma7eeg.streamlit.app/)
+
+## 📁 Project Structure
+
+```text
+Student-Performance-Analysis/
 │
-├── app.py                 # Streamlit user interface (what you see)
-├── analysis.py            # Calculation and validation logic (no Streamlit code)
-├── requirements.txt       # List of packages to install
-├── sample_students.csv    # 36 FICTIONAL students for demonstration
-├── README.md              # This file
-├── .gitignore             # Files that Git should ignore
+├── app.py
+├── analysis.py
+├── requirements.txt
+├── sample_students.csv
+├── README.md
 │
 └── tests/
-    └── test_analysis.py   # Automated tests for analysis.py
+    └── test_analysis.py
 ```
 
-`app.py` only handles display. All calculations and checks are in `analysis.py`, so they can be tested without opening the web page.
+| File                     | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| `app.py`                 | Streamlit dashboard and application interface |
+| `analysis.py`            | Data analysis and calculation logic           |
+| `requirements.txt`       | Required Python packages                      |
+| `sample_students.csv`    | Sample student dataset                        |
+| `tests/test_analysis.py` | Automated tests                               |
+| `README.md`              | Project documentation                         |
 
-## 6. Dataset format
+## 🧮 Student Performance Calculations
 
-Your CSV file needs:
+A common percentage calculation is:
 
-- A **header row** (the first line holds the column names).
-- **One row per student.**
-- **One column per subject**, containing numeric marks.
-- Comma-separated values, saved as **UTF-8** (in Excel: *Save As → CSV UTF-8*).
-
-Example:
-
-```csv
-Student_ID,Name,Gender,Mathematics,English,Science,Computer
-S001,Aarav Sharma,Male,96,92,95,98
-S002,Ananya Iyer,Female,94,97,91,96
+```text
+Percentage = (Marks Obtained / Maximum Possible Marks) × 100
 ```
 
-- `Student_ID`, `Name` and `Gender` are **optional** and the column names are **not fixed**. If the app finds a column
-  whose name contains "name" or "roll", or looks like an ID column (`ID`, `Student_ID`, `Student ID`, `StudentID`),
-  it uses it for searching. If there is no such column, searching is simply turned off.
-- Other columns (Age, Attendance, Quiz scores ...) are kept and shown in the results. The app only *suggests* columns
-  that look like marks as subjects; it skips names such as age, attendance, total, percentage, grade and result.
-  You can change the selection at any time.
-- Subject columns can have **any names** and any number of subjects. You choose them in the sidebar
-  (the app suggests the columns that look like marks).
-- **Marks are assumed to be between 0 and 100.** You can change the maximum (and the passing marks) under
-  *Advanced settings* in the sidebar.
-- The included `sample_students.csv` has an extra column, `Data_Type`, which says "Fictional demo data".
-  Extra columns are kept in the results and the download.
+For multiple subjects:
 
-> **The sample dataset is fictional.** All names and marks in `sample_students.csv` were made up for demonstration.
-> They do not describe any real person.
-
-## 7. Grade calculation rules
-
-```
-Percentage = Total marks ÷ (Number of subjects × Maximum marks) × 100
+```text
+Total Marks = Subject 1 + Subject 2 + ... + Subject N
 ```
 
-(With the default maximum of 100 per subject, the percentage equals the average mark.)
-The percentage is rounded to 2 decimal places, and the grade is taken from that rounded percentage.
+The maximum possible marks depend on the number of subjects and the scoring system.
 
-| Percentage | Grade |
-|---|---|
-| 90 – 100 | A+ |
-| 80 – 89.99 | A |
-| 70 – 79.99 | B |
-| 60 – 69.99 | C |
-| 50 – 59.99 | D |
-| Below 50 | F |
+Grades and Pass/Fail results are determined by the rules implemented in the application.
 
-## 8. Pass/Fail rules
+## 💡 Example Use Case
 
-- The passing mark is **40 in every selected subject** (changeable in *Advanced settings*).
-- If a student scores **below 40 in any one subject**, the student is **Fail**.
-- Otherwise the student is **Pass**.
+Imagine a teacher has a dataset containing student IDs, names, and marks in multiple subjects.
 
-**Important:** grade and Pass/Fail are decided **separately**, exactly as the rules above say. So:
+Using this application, the teacher can:
 
-- A student with 45 in every subject has percentage 45 → grade **F**, but **Pass** (nothing is below 40).
-- A student with 92, 38, 90, 95 has percentage 78.75 → grade **B**, but **Fail** (38 is below 40).
+1. Explore student records.
+2. Review academic performance.
+3. Compare available performance metrics.
+4. Search for individual students.
+5. Apply available filters.
+6. Download results if the export feature is enabled.
 
-**Missing or invalid marks are never treated as zero.** If a mark is missing, not a number, below 0, or above the
-maximum, the app tells you exactly where the problem is and does not calculate results until you fix the file
-or choose to leave those rows out.
+This can help make routine academic data analysis more convenient.
 
-## Search and filter rules
+## 💻 Run the Project Locally
 
-All active conditions must be true **at the same time** (logical AND). Start with all students, then:
+### Prerequisites
 
-1. **Search** (optional) - type in the sidebar box and press **Enter**:
-   - **Names:** partial match, ignoring capital letters and extra spaces. `jamie` finds `Jamie Jones` and `Jamie Smith`;
-     `  JAMIE   jones ` finds `Jamie Jones`.
-   - **Student IDs:** the **whole ID** must match. `14` finds student 14 only, not 114 or 140. Numeric IDs and text IDs
-     (`S010`) both work, and `14` also matches `14.0`.
-   - An empty search keeps every student that satisfies the other filters.
-2. **Filter by grade** - one or more grades (A+, A, B, C, D, F). Uses the grade calculated by the app.
-3. **Filter by Pass / Fail** - uses the passing marks of the calculation (default 40 in every subject).
+* Python installed on your computer.
+* Git installed if you want to clone the repository.
+* A terminal such as Windows PowerShell.
 
-Clearing one control removes only that restriction. If nobody matches, the app says why
-(for example *No students found matching your search.*) and never falls back to showing everyone.
+### Step 1: Clone the Repository
 
-What follows the search/filters: the **results table**, the **Student Details** section, the **performance summary**,
-the **four charts** and the **filtered CSV download**. The **Download all results** button always contains everyone.
+```bash
+git clone https://github.com/AshishMandalDSAI/Student-Performance-Analysis.git
+```
 
-**Student Details:** when exactly one student matches, a *Student Details* section lists **every column of the uploaded file**
-(ID, name, age, gender, quizzes, assignments, midterm, final, attendance ... whatever your file has) followed by the
-calculated total, average, percentage, grade and result. Empty cells are shown as `(missing)`; nothing is invented.
-When several students match, they all appear in the table, and a drop-down lets you open any one of them in full.
+### Step 2: Open the Project Directory
 
-**If your file already has columns named like the calculated ones** (`Percentage`, `Grade`, `Result`, ...), your columns are
-kept unchanged and the app's columns are named `Calculated_...`. The grade/Pass-Fail filters, summary and charts use the
-calculated columns, and the app shows a note explaining this.
+```bash
+cd Student-Performance-Analysis
+```
 
-**Missing values** are reported in two places: the *Dataset preview* counts the **complete uploaded file**, and the
-*Missing values* block under the results compares the complete file with the **currently filtered results**.
+### Step 3: Create a Virtual Environment
 
-## 9. Installation instructions
+```bash
+python -m venv .venv
+```
 
-You need **Python 3.12** installed. Check with `py -3.12 --version` in PowerShell.
+### Step 4: Activate the Environment
 
-Open **Windows PowerShell** and run the commands below one by one.
-
-> **Replace the example path** `C:\path\to\student-performance-analysis` in the first command with the real folder
-> where you unzipped the project (for example `C:\Users\YourName\Documents\student-performance-analysis`).
+**Windows PowerShell:**
 
 ```powershell
-cd "C:\path\to\student-performance-analysis"
-
-py -3.12 -m venv .venv
-
 .\.venv\Scripts\Activate.ps1
+```
 
-python -m pip install --upgrade pip setuptools wheel
+### Step 5: Install Dependencies
 
+```bash
 python -m pip install -r requirements.txt
 ```
 
-What these do: go to the project folder, create a private Python environment named `.venv`, switch it on,
-update the install tools, and install the packages from `requirements.txt`.
+### Step 6: Run the Application
 
-**If PowerShell says "running scripts is disabled"** when you activate the environment, run this once and try again
-(it only affects the current window):
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-When the environment is active you will see `(.venv)` at the start of the prompt.
-
-*macOS / Linux users:* use `python3.12 -m venv .venv` and `source .venv/bin/activate` instead, then the same `pip` commands.
-
-## 10. How to run the application
-
-With the environment active (you see `(.venv)`):
-
-```powershell
+```bash
 python -m streamlit run app.py
 ```
 
-Your browser opens at `http://localhost:8501`. If it does not, copy that address into your browser.
-To stop the app, press `Ctrl + C` in PowerShell.
+Open the local address displayed in your terminal. Streamlit commonly uses:
 
-## 11. How to run the tests
+```text
+http://localhost:8501
+```
 
-```powershell
+## 🧪 Run Automated Tests
+
+Run the test suite with:
+
+```bash
 python -m pytest -q
 ```
 
-All tests should pass. They check totals, averages, percentages, grades, Pass/Fail, every kind of invalid data
-(missing columns, text marks, negative marks, marks above 100, empty files, missing marks), filtering, CSV export,
-and the sample dataset.
+The terminal will display the actual test results.
 
-## 12. How to upload data
+## 🚀 Deployment
 
-1. Start the app (section 10).
-2. In the **sidebar**, click **Browse files** under *Upload a CSV file* and choose your `.csv` file.
-   (Or tick **Use the sample dataset (fictional)** to try the app first.)
-3. Look at the **Dataset preview** to check the file was read correctly.
-4. Under **Choose subject columns** in the sidebar, make sure only the columns that hold marks are selected.
-   Remove any column that is not a subject (for example "Age").
-5. Read the **Data validation** section. A green message means everything is fine.
-   Red messages explain the problems and list the affected rows with their line numbers in your file.
-   Fix the CSV and upload it again, or tick *Leave these rows out of the calculation and continue*
-   (the app then tells you how many rows were left out).
+The project has a public Streamlit application link:
 
-## 13. How to download results
+**Live App:**
+https://student-performance-analysis-ggztvejeupesjzqbma7eeg.streamlit.app/
 
-Scroll to the bottom of the page, to **Download results**:
+**GitHub Source Code:**
+https://github.com/AshishMandalDSAI/Student-Performance-Analysis
 
-- **Download all results (CSV)** saves `student_results.csv` with every student.
-- **Download filtered results (CSV)** saves only the students currently shown after your search/filters.
+The application source code is maintained in GitHub, while the live dashboard is accessible through Streamlit Community Cloud.
 
-The file contains **all your original columns** followed by five calculated columns:
-`Total_Marks`, `Average_Marks`, `Percentage`, `Grade`, `Result`.
-(If your file already has a column with one of those names, the new column is named `Calculated_...`
-and your original column is left untouched.)
+Official deployment guide: [Streamlit Community Cloud Documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
 
-## 14. Limitations
+## 🔮 Future Improvements
 
-- Only **CSV** files are supported (not `.xlsx`). Save Excel files as *CSV UTF-8* first. Files that use semicolons
-  or tabs instead of commas, or a non-UTF-8 encoding, are rejected with a helpful message.
-- The grade scale is fixed in the code (`GRADE_SCALE` in `analysis.py`). Only the maximum marks and the passing marks can be changed in the app.
-- All subjects count equally (no weighting), and the maximum and passing marks are the same for every subject.
-- The app expects **one row per student** and does not check for duplicate students.
-- Rows with missing or invalid marks are **not** repaired automatically. You must fix the file or choose to leave those rows out.
-- The search box applies when you press **Enter** or click elsewhere. Streamlit text boxes do not update on every key press.
-- ID search needs the whole ID (`S01` does not find `S010`). Names use partial matching.
-- The "Student percentage comparison" chart shows at most 40 students (the top 20 and bottom 20) so that it stays readable.
-  The results table and download always include everyone.
-- The column suggestion is a guess: any numeric column (such as "Age") may be suggested as a subject, so check the selection in the sidebar.
-- Everything is processed in memory; the app is meant for small class-sized files, not huge datasets.
-- Created and tested on Linux with Python 3.12.3. The Windows PowerShell commands above use standard Python tools but were not run on a Windows machine.
+Potential improvements for future versions include:
+
+* 📊 More interactive charts and performance comparisons.
+* 📄 Downloadable PDF reports.
+* 📈 Subject-wise and student-wise analysis.
+* 📂 Additional supported file formats.
+* 🛡️ Improved data validation and error handling.
+* 🎨 Further improvements to dashboard design and usability.
+* 📱 Better mobile responsiveness.
+
+## 👨‍💻 Author
+
+**Ashish Mandal**
+
+* **GitHub Profile:** [AshishMandalDSAI](https://github.com/AshishMandalDSAI)
+* **Project Repository:** [Student Performance Analysis System](https://github.com/AshishMandalDSAI/Student-Performance-Analysis)
+* **Live Demo:** [Open the Application](https://student-performance-analysis-ggztvejeupesjzqbma7eeg.streamlit.app/)
+
+## 📄 License
+
+No license is specified in this README. Add a `LICENSE` file if you want to define the terms under which others may use, modify, or distribute the project.
+
+---
+
+<div align="center">
+
+### ⭐ Explore the project and try the live demo!
+
+**Built with Python, Pandas, Matplotlib, and Streamlit.**
+
+</div>
